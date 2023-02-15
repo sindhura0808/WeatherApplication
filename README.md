@@ -12,6 +12,10 @@ This application also gives the information about the gas levels in the automosp
 - Gas level- You can also get information about the different gases in the automsphere like co2,o3,no2 and get the air quality
 - Share- You can share the app.
 
+ ## Screenshots
+ <img width=400 height=500 src=https://github.com/sindhura0808/WeatherApplication/issues/1#issuecomment-1431813666> 
+
+
 ## Built With
 - Kotlin - First class and official programming language for Android development.
 - Coroutines - For asynchronous and more..
