@@ -15,6 +15,7 @@ This application also gives the information about the gas levels in the automosp
  ## Screenshots
  <img width=400 height=500 src=https://github.com/sindhura0808/WeatherApplication/issues/1#issuecomment-1431813666> 
  https://user-images.githubusercontent.com/28910395/219118884-8b9dd28f-6ce5-4345-a885-a4122f552110.png
+ (https://user-images.githubusercontent.com/28910395/219119055-18038015-61e0-4b92-aa6d-8550db3e7258.png
 
 
 ## Built With
