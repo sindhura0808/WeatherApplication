@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/blue"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quality"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/good"
+            android:textColor="#118A3D"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_quality" />
+
+        <TextView
+            android:id="@+id/tv_fair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fair"
+            android:textColor="#A4C639"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_good" />
+
+        <TextView
+            android:id="@+id/tv_moderate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moderate"
+            android:textColor="#E5F322"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_fair" />
+
+        <TextView
+            android:id="@+id/tv_poor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/poor"
+            android:textColor="#DF967E"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_moderate" />
+
+        <TextView
+            android:id="@+id/tv_verypoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/very_poor"
+            android:textColor="#ff0000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_poor" />
+
+        <TextView
+            android:id="@+id/tv_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/index"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_quality"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_index1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:text="@string/_1"
+            android:textColor="#118A3D"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_quality"
+            app:layout_constraintTop_toBottomOf="@id/tv_index" />
+
+        <TextView
+            android:id="@+id/tv_index2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:text="@string/_2"
+            android:textColor="#A4C639"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_quality"
+            app:layout_constraintTop_toBottomOf="@id/tv_index1" />
+
+        <TextView
+            android:id="@+id/tv_index3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:text="@string/_3"
+            android:textColor="#E5F322"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_quality"
+            app:layout_constraintTop_toBottomOf="@id/tv_index2" />
+
+        <TextView
+            android:id="@+id/tv_index4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:text="@string/_4"
+            android:textColor="#DF967E"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_quality"
+            app:layout_constraintTop_toBottomOf="@id/tv_index3" />
+
+        <TextView
+            android:id="@+id/tv_index5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:text="@string/_5"
+            android:textColor="#ff0000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_quality"
+            app:layout_constraintTop_toBottomOf="@id/tv_index4" />
+
+        <TextView
+            android:id="@+id/tv_no2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/no2"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_index"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_no2_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_0_50"
+            android:textColor="#118A3D"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_index"
+            app:layout_constraintTop_toBottomOf="@id/tv_no2" />
+
+        <TextView
+            android:id="@+id/tv_no2_Fair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_51_100"
+            android:textColor="#A4C639"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_index"
+            app:layout_constraintTop_toBottomOf="@id/tv_no2_good" />
+
+        <TextView
+            android:id="@+id/tv_no2_moderate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_101_200"
+            android:textColor="#E5F322"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_index"
+            app:layout_constraintTop_toBottomOf="@id/tv_no2_Fair" />
+
+        <TextView
+            android:id="@+id/tv_no2_poor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_201_400"
+            android:textColor="#DF967E"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_index"
+            app:layout_constraintTop_toBottomOf="@id/tv_no2_moderate" />
+
+        <TextView
+            android:id="@+id/tv_no2_verypoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_400"
+            android:textColor="#ff0000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_index"
+            app:layout_constraintTop_toBottomOf="@id/tv_no2_poor" />
+
+        <TextView
+            android:id="@+id/tv_pm10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/pm10"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_no2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_pm10_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_0_25"
+            android:textColor="#118A3D"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_no2"
+            app:layout_constraintTop_toBottomOf="@id/tv_pm10" />
+
+        <TextView
+            android:id="@+id/tv_pm10_fair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_26_50"
+            android:textColor="#A4C639"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_no2"
+            app:layout_constraintTop_toBottomOf="@id/tv_pm10_good" />
+
+        <TextView
+            android:id="@+id/tv_pm10_moderate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_51_90"
+            android:textColor="#E5F322"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_no2"
+            app:layout_constraintTop_toBottomOf="@id/tv_pm10_fair" />
+
+        <TextView
+            android:id="@+id/tv_pm10_poor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_91_180"
+            android:textColor="#DF967E"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_no2"
+            app:layout_constraintTop_toBottomOf="@id/tv_pm10_moderate" />
+
+        <TextView
+            android:id="@+id/tv_pm10_verypoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_180"
+            android:textColor="#ff0000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_no2"
+            app:layout_constraintTop_toBottomOf="@id/tv_pm10_poor" />
+
+        <TextView
+            android:id="@+id/tv_o3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/o3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_pm10"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_o3_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_0_60"
+            android:textColor="#118A3D"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_pm10"
+            app:layout_constraintTop_toBottomOf="@id/tv_o3" />
+
+        <TextView
+            android:id="@+id/tv_o3_fair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_61_120"
+            android:textColor="#A4C639"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_pm10"
+            app:layout_constraintTop_toBottomOf="@id/tv_o3_good" />
+
+        <TextView
+            android:id="@+id/tv_o3_moderate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_121_180"
+            android:textColor="#E5F322"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_pm10"
+            app:layout_constraintTop_toBottomOf="@id/tv_o3_fair" />
+
+        <TextView
+            android:id="@+id/tv_o3_poor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_181_240"
+            android:textColor="#DF967E"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_pm10"
+            app:layout_constraintTop_toBottomOf="@id/tv_o3_moderate" />
+
+        <TextView
+            android:id="@+id/tv_o3_verypoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_240"
+            android:textColor="#ff0000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_pm10"
+            app:layout_constraintTop_toBottomOf="@id/tv_o3_poor" />
+
+        <TextView
+            android:id="@+id/tv_pm2.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:text="@string/pm2_5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_o3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_pm2.5_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_0_15"
+            android:textColor="#118A3D"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_o3"
+            app:layout_constraintTop_toBottomOf="@id/tv_pm2.5" />
+
+        <TextView
+            android:id="@+id/tv_pm2.5_fair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_16_30"
+            android:textColor="#A4C639"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_o3"
+            app:layout_constraintTop_toBottomOf="@id/tv_pm2.5_good" />
+
+        <TextView
+            android:id="@+id/tv_pm2.5_moderate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_31_55"
+            android:textColor="#E5F322"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_o3"
+            app:layout_constraintTop_toBottomOf="@id/tv_pm2.5_fair" />
+
+        <TextView
+            android:id="@+id/tv_pm2.5_poor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_56_110"
+            android:textColor="#DF967E"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_o3"
+            app:layout_constraintTop_toBottomOf="@id/tv_pm2.5_moderate" />
+
+        <TextView
+            android:id="@+id/tv_pm2.5_verypoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="@string/_110"
+            android:textColor="#ff0000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_o3"
+            app:layout_constraintTop_toBottomOf="@id/tv_pm2.5_poor" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</HorizontalScrollView>
